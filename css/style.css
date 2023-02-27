@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h2{
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.contenedor{
+    background-color:rgb(255, 255, 255);
+    width: 90%;
+    height: 80vh;
+    border: solid rgba(255, 255, 255, 0) 10px;
+    text-align: center;
+    margin: 20px auto;
+    color: white;
+
+    /* se tranforma en grid*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: repeat(1fr 1fr 1fr ) ;
+    gap: 10px;
+    grid-template-areas: 
+    "ABC ABC ABC" 
+    "DE DE FIL" 
+    "GH GH FIL"
+    "J K FIL"
+    "MNO MNO MNO";
+
+}
+
+.hijo{
+    border: 2px rgb(255, 255, 255) solid;
+    background-color: rgb(255, 255, 255);
+    justify-items: center;
+    text-align: center;
+}
+
+.ABC{
+    grid-area: ABC;
+    background-color:blue;
+}
+
+.DE{
+    background-color: greenyellow;
+    grid-area: DE;
+}
+
+
+.FIL{
+    background-color: red;
+    grid-area: FIL;
+
+}
+
+.GH{
+    background-color: green;
+    grid-area: GH;
+}
+
+.J{
+    background-color: rgb(0, 83, 0);
+    grid-area: J;
+}
+.K{
+    background-color: rgb(4, 78, 4);
+    grid-area: K;
+}
+
+
+.MNO{
+    background-color: rgb(54, 2, 97);
+    grid-area: MNO;
+
+}
